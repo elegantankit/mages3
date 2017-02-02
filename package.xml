@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+    <name>MVentory_CDN</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License version 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Host product images on AWS S3 with automated uploading of new images. Compatible with AWS CloudFront.</summary>
+    <description>Product images uploaded to Magento are duplicated in Amazon AWS S3 storage cloud. Product and category pages use S3 or CloudFront URLs to display them.&#xD;
+&#xD;
+The extension has to prepare images of multiple sizes and upload them all to S3 to avoid resizig at runtime. You will need to check your theme for the list of sizes used in it.&#xD;
+&#xD;
+Theme compatibility&#xD;
+&#xD;
+Most well designed themes are compatible with the extension. You may need to make a few minor changes. See documentation on GitHub.&#xD;
+&#xD;
+Source code and documentation&#xD;
+&#xD;
+https://github.com/mVentory/S3CDN&#xD;
+&#xD;
+Support&#xD;
+&#xD;
+Bug reports are welcome at info@mventory.com&#xD;
+&#xD;
+License&#xD;
+&#xD;
+The extension is free open source released under OSL 3 license. Please, contribute your code if you make useful changes.</description>
+    <notes>Initial release</notes>
+    <authors><author><name>Anatoly A. Kazantsev</name><user>anatoly</user><email>anatoly@mventory.com</email></author></authors>
+    <date>2014-06-01</date>
+    <time>11:12:21</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="MVentory_CDN.xml" hash="28eca62142b4b9a00978904fe0d6d5d2"/></dir></target><target name="magecommunity"><dir name="MVentory"><dir name="CDN"><dir name="Block"><dir name="System"><dir name="Config"><dir name="Form"><dir name="Field"><file name="Placeholders.php" hash="0c893beb510e2102395a247372cfffd9"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="3a74eb18a9c0e90d9529740d56d7f10a"/><dir name="Mage"><dir name="Catalog"><file name="Image.php" hash="28d1530c9c8c8810aaaafe6fcd6bcbe1"/></dir></dir></dir><dir name="Model"><file name="Config.php" hash="4d4cbdaf7c72782982c73187d55e55a2"/><dir name="Mage"><dir name="Catalog"><dir name="Product"><file name="Image.php" hash="f62e3eca90e228411f9820c3eee86622"/></dir></dir></dir><file name="Observer.php" hash="ca2028f86e4b115d519091cb9a02a2b6"/></dir><dir name="controllers"><file name="PlaceholdersController.php" hash="7cc18a6f4a0ca224e64dc5dbbd2c7888"/></dir><dir name="etc"><file name="config.xml" hash="1eda6fd8daf7564ce104cd9341f99597"/><file name="system.xml" hash="33e807357b8746420c99bdeaaff51688"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
